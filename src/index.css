@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@layer base {
+  :root {
+    --color-primary: #f39c0b; 
+    --color-secondary:#e86f00;
+    --color-primaryDark:#d65609;
+    --color-dark:#656565;
+  }
+  .container {
+    margin-left: auto; /* Centers the container */
+    margin-right: auto;
+    padding: 1rem; /* Default padding */
+    /* Add responsive padding */
+    @media (min-width: 640px) { /* sm breakpoint */
+      padding: 2rem;
+    }
+}
+@layer utilities{
+  .text-shadow{
+    text-shadow:2px 2px 2px #1128015b;
+  } 
+  .img-shadow{
+   filter: drop-shadow(40px 50px 25px #300000eb);
+  } 
+  .img-shadow2{
+    filter: drop-shadow(40px 50px 25px #778f83eb);
+   } 
+   .input-style{
+    @apply px-4 py-2 border-[1px] 
+   }
+}
+}
