@@ -23,7 +23,7 @@ const Navbar = ({sidebar,setSidebar}) => {
        <div onClick={()=>setSidebar(!sidebar)}>
         <div><GiHamburgerMenu className='text-5xl cursor-pointer'/></div>
        </div>
-       {sidebar && (
+{/*        {sidebar && (
   <div
     className="absolute bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-primary)] z-[9999] p-4 rounded-md shadow-lg"
     style={{
@@ -46,7 +46,7 @@ const Navbar = ({sidebar,setSidebar}) => {
       </div>
     </div>
   </div>
-)}
+)} */}
    </div>
    </div>
    </div>
